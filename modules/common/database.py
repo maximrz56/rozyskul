@@ -47,7 +47,7 @@ class Database():
         self.cursor.execute(query)
         self.connection.commit()
 
-     def get_detailed_orders(self):
+    def get_detailed_orders(self):
         query = "SELECT orders.id, customers.name, products.name, \
                 products.description, orders.order_date \
                 FROM orders \
